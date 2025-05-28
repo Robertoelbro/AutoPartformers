@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'iniciar_pago' %}">
+    {% csrf_token %}
+    <input type="number" name="monto" placeholder="Ingrese monto" required>
+    <button type="submit">Pagar</button>
+  </form>
